@@ -1,0 +1,9 @@
+# General
+alias c='clear'
+alias ll='ls -lsa'
+
+# Git
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m '
+alias gp='git push'
