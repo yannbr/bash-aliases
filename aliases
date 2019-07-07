@@ -7,3 +7,6 @@ alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m '
 alias gp='git push'
+
+# Refresh aliases locally based on this file
+alias refresh-alias='cp /dev/null ~/.aliases && curl -sS https://raw.githubusercontent.com/yannbr/bash-aliases/master/aliases >> ~/.aliases && source ~/.aliases'
