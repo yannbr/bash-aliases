@@ -11,13 +11,3 @@ alias gp='git push'
 # Refresh aliases locally based on this file
 alias refresh-alias='cp /dev/null ~/.aliases && curl -sS https://raw.githubusercontent.com/yannbr/bash-aliases/master/aliases >> ~/.aliases && source ~/.aliases'
 
-# Doc Generation
-alias doc-check='docker pull ssense/documentation-inspector && docker run -it --rm -v $(pwd):/code/target ssense/documentation-inspector make inspect'
-alias doc-create='docker pull ssense/documentation-inspector && docker run -it --rm -v $(pwd):/code/target ssense/documentation-inspector make create'
-
-# Pubsub Replay
-alias replay='docker pull ssense/ms-pubsub && docker run -it --rm ssense/ms-pubsub make start-replay'
-
-# Diagram as Code
-alias gen-diagram='docker pull ssense/diagram-as-code && docker run -it --rm -v $(pwd):/code/input ssense/diagram-as-code make generate '
-alias gen-batch='docker pull ssense/diagram-as-code && docker run -it --rm -v $(pwd):/code/input ssense/diagram-as-code make batch-generate'
